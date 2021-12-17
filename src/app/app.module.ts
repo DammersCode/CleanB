@@ -5,16 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePage } from './pages/home/home.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePage
-  ],
+  declarations: [AppComponent, HomePage],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NgxTypedJsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

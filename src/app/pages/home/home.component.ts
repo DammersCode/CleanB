@@ -1,11 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import {
-  Component,
-  Inject,
-  OnDestroy,
-  OnInit,
-  ViewEncapsulation,
-} from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'home-page',
@@ -17,11 +11,11 @@ export class HomePage implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this._document.body.classList.add('gradient-bg');
-    debugger;
+
+    //let typeWirter = new Typewriter();
   }
 
   ngOnDestroy(): void {
     this._document.body.classList.add('gradient-bg');
-    debugger;
   }
 }
