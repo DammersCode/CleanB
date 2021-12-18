@@ -10,17 +10,13 @@
 
   <div class="content">
     <ngx-typed-js
-      [strings]="[
-        'test',
-        'hallo',
-        'halo',
-        'dreioausbdfiubgasidbnoigdsfbsodfouhbfeuiohuidbuisbvpjsodigbeiohsbiowhiBDFubugpeu3bugfi759bdu84bt9bnfdg9n657ztrbnig9ufbn4t90badagijjkn'
-      ]"
+      [strings]="typeString"
       [loop]="true"
       [smartBackspace]="true"
-      [typeSpeed]="100"
-      [backSpeed]="100"
+      [typeSpeed]="80"
+      [backSpeed]="40"
       [backDelay]="1000"
+      [startDelay]="4000"
     >
       <span class="typing"></span>
     </ngx-typed-js>

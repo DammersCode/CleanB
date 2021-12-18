@@ -12,7 +12,8 @@
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 46%;
+  animation: loadingInContent 3.6s;
 }
 
 .bar {
@@ -26,7 +27,7 @@
 
   a {
     transition: 0.4s;
-    padding: 0 6vw;
+    padding: 0 4.5vw;
     font-size: 18px;
     text-decoration: none;
     opacity: 1;
@@ -61,5 +62,19 @@
   }
   100% {
     transform: translate(0px, 0px);
+  }
+}
+
+@keyframes loadingInContent {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    transform: translate(0px, -40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
   }
 }
